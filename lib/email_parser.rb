@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    split = @emails.split(/[\s, ]/)
+    split = @emails.split(/[\s,+]/)
     email_list = []
     split.each do |email|
       email_list << email unless email_list.include?(email)
